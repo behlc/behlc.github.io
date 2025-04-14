@@ -69,8 +69,8 @@ class Robots {
 
     this.height = 40;
     this.width = 40;
-    this.xSpeed = random(3,5);
-    this.ySpeed = random(-3,-5);
+    this.xSpeed = random(3,10);
+    this.ySpeed = random(-3,-10);
   }
  
   move() {
@@ -97,7 +97,7 @@ function makeRobots() {
   robotObj = new Robots();
   robotsList.push(robotObj);
   console.log(robotsList);
-  gameTimeout = setTimeout(makeRobots, 1000);
+  gameTimeout = setTimeout(makeRobots, 3000);
   
 }
 
@@ -106,7 +106,8 @@ function makeBlocks() {
   //fill(myColor1,myColor2, myColor3);
   fill("#ff0080");
   //ellipse(mouseX, blockYPos, blockWidth, blockHeight);
-  ellipse(mouseX, 400, windowWidth*0.05, windowWidth*0.05);
+  //ellipse(mouseX, 400, windowWidth*0.05, windowWidth*0.05);
+  rect(mouseX, 400, 155,55);
   //rect(mouseX, blockYPos, blockWidth, blockHeight,0,0,20,20);
 
 }
