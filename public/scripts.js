@@ -104,10 +104,10 @@ function makeRobots() {
 function makeBlocks() {
  
   //fill(myColor1,myColor2, myColor3);
-  fill("#ff0080");
+  fill("white");
   //ellipse(mouseX, blockYPos, blockWidth, blockHeight);
   //ellipse(mouseX, 400, windowWidth*0.05, windowWidth*0.05);
-  rect(mouseX, 400, 155,55);
+  rect(mouseX, 400, 155,55, 20, 15, 10, 5);
   //rect(mouseX, blockYPos, blockWidth, blockHeight,0,0,20,20);
 
 }
